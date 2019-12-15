@@ -17,18 +17,20 @@ public class SnakeConsole {
 		
 		snakePositionX.add(x);
 		snakePositionY.add(y);
+		snakePositionX.add(2);
+		snakePositionY.add(2);
 		
 		switch(direction) {
-			case 37: //flèche de gauche
+			case 37: //flÃ¨che de gauche
 				y = y==1 ? sizeTableau : --y;
 				break;
-			case 38: //flèche du haut
+			case 38: //flÃ¨che du haut
 				x = x==1 ? sizeTableau : --x;
 				break;
-			case 39: //flèche de droite
+			case 39: //flÃ¨che de droite
 				y = y==sizeTableau ? 1 : ++y;
 				break;
-			case 40: //flèche du bas
+			case 40: //flÃ¨che du bas
 				x = x==sizeTableau ? 1 : ++x;
 				break;
 		}
